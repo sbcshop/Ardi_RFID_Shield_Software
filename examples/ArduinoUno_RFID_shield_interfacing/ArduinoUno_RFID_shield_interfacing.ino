@@ -6,7 +6,7 @@
 char input[12];    // variable to hold RFID card value     
 int count = 0;        
 int buzzerPin = 3;  // Buzzer connected at Digital Pin 3 of Arduino Uno
-int relayPin = 2;   // Relay connected at Digital Pin 3 of Arduino Uno
+int relayPin = 2;   // Relay connected at Digital Pin 2 of Arduino Uno
 bool statusVal = 0;    // to check previous state
 
 
