@@ -10,16 +10,16 @@ buzzer = machine.Pin(2, machine.Pin.OUT) #Define GPIO2 as output connected to bu
 #initially switch off be setting LOW value
 buzzer.value(0)
 relay.value(0)
+toggleVal = True
 
 while 1:
     data_Read = RFID.readline(12)#read data comming from other pico lora expansion
-    if data_Read is not None: # enter when RFID card detected 
+    if data_Read is not None: # enter when RFID card detected
+        toggleVal = not toggleVal
         print(data_Read)
         data=data_Read.decode("utf-8") # convert raw data into utf-8 format
         print(data)
-        relay.value(1) # Switch ON Relay 
+        relay.value(toggleVal) # Switch ON Relay 
         buzzer.value(1) # Switch ON Buzzer 
-        time.sleep(0.5)
     time.sleep(0.5)
     buzzer.value(0)
-    relay.value(0)
