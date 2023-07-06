@@ -53,7 +53,7 @@ When RFID shield mounted on ArdiPi,
 | Buzzer | GP2 | 
 
 ### Example Codes
- Also, sample codes are available for Ardi RFID shield
+ Ardi RFID shield Sample codes provided for different boards
  - [Ardi RFID shield for UNO](https://github.com/sbcshop/Ardi_RFID_Shield_Software/tree/main/examples/ArduinoUno_RFID_shield_interfacing) 
  - [Ardi RFID shield for Ardi32](https://github.com/sbcshop/Ardi_RFID_Shield_Software/tree/main/examples/Ardi32_RFID_shield_interfacing) 
  - [Ardi RFID shield for ArdiPi](https://github.com/sbcshop/Ardi_RFID_Shield_Software/tree/main/examples/ArdiPi_RFID_shield_interfacing)
