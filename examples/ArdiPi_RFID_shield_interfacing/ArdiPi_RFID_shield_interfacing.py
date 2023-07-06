@@ -22,5 +22,5 @@ while 1:
         relay.value(toggleVal) # Toggle Relay 
         buzzer.value(1) # Switch ON Buzzer 
     time.sleep(0.2)    # wait 0.2 second
-    buzzer.value(0)
+    buzzer.value(0)    # Switch OFF Buzzer 
 
