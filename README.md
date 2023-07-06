@@ -34,6 +34,10 @@ When RFID shield mounted on Arduino Uno,
 | Relay  | D2 | 
 | Buzzer | D3 | 
 
+ * Make sure to disconnect RFID shield when uploading code to Arduino UNO, since it is using Hardware serial. 
+ * Once code uploaded then Mount RFID shield on Arduino and open serial monitor and set baudrate as 9600 to test code.
+ * When card detected, value printed on serial with audio alert and relay state toggled
+
 When RFID shield mounted on Ardi32, 
 |RFID shield | Ardi32| 
 |---|---|
@@ -49,12 +53,12 @@ When RFID shield mounted on ArdiPi,
 | Buzzer | GP2 | 
 
 ### Example Codes
-   Also, sample codes are available for Ardi RFID shield
-   - [Ardi RFID shield for UNO]() 
-   - [Ardi RFID shield for Ardi32]() 
-   - [Ardi RFID shield for ArdiPi]()
-   
-   Using this sample code as a guide, you can modify, build for other boards and share codes!!  
+ Also, sample codes are available for Ardi RFID shield
+ - [Ardi RFID shield for UNO]() 
+ - [Ardi RFID shield for Ardi32]() 
+ - [Ardi RFID shield for ArdiPi]()
+ 
+ Using this sample code as a guide, you can modify, build for other boards and share codes!!  
    
 ## Resources
   * [Schematic](https://github.com/sbcshop/Ardi_RFID_Shield_Hardware/blob/main/Design%20Data/SCH%204CH%20Relay%20Shield.pdf)
@@ -63,7 +67,7 @@ When RFID shield mounted on ArdiPi,
 
 
 ## Related Products
-   * [ArdiFi](https://shop.sb-components.co.uk/products/ardi32-uno-r3-alternative-board-based-on-esp32-s3-wroom?_pos=6&_sid=90d9cefb0&_ss=r) - Arduino Uno Form factor with latest powerful ESP32 S3
+   * [Ardi-32](https://shop.sb-components.co.uk/products/ardi32-uno-r3-alternative-board-based-on-esp32-s3-wroom?_pos=6&_sid=90d9cefb0&_ss=r) - Arduino Uno Form factor with latest powerful ESP32 S3
    * [ArdiPi](https://shop.sb-components.co.uk/products/ardipi-uno-r3-alternative-board-based-on-pico-w?_pos=5&_sid=5704675c2&_ss=r) - Arduino Uno Form factor with powerful Pico W of Raspberry Pi having onboard WiFi and BLE support.
    * [Ardi Display Shield](https://shop.sb-components.co.uk/products/ardi-display-shield-for-arduino-uno?_pos=5&_sid=961a5887c&_ss=r) - 2.0" Display Shield with onboard Programmable Buttons and Joystick
    * [Ardi UHF Shield](https://shop.sb-components.co.uk/products/ardi-uhf-shield-for-arduino-uno?variant=40791294836819) - UHF based shield with Oled display and Buzzer onboard
